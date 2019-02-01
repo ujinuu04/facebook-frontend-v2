@@ -1,5 +1,24 @@
 <html>
     <body>
+        <h1>Array</h1>
+        <script>
+            var member = ['이고잉', '최유진', '윤경민'];
+            document.write(member[1]+'<br>');
+            document.write(member.length+'<br>');
+            member.push('new');
+            document.write(member+'<br>');
+            document.write(member.length+'<br>');
+        </script>
+
+        <h1>Array + Loop</h1>
+        <script>
+            var member = ['이고잉', '최유진', '윤경민'];
+            var i = 0;
+            while(i<member.length){
+                document.write('<li>'+member[i]+'</li>');
+                i = i+1;
+            }
+        </script>
         <h1>Loop</h1>
         <script>
             document.write("1<br>");

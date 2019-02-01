@@ -30,16 +30,30 @@
                 
                 <input id="day_night" type="button" value="night" onclick="
                     var body = document.querySelector('body');
+                    var i = 0;
+                    var links = document.getElementsByTagName('a');
                     //현재 value가 night이면 (바뀌고 나서 다음 상태 변화를 위해 day로 바꿔주어야함)
                     if(this.value == 'night'){
                         body.style.backgroundColor='black';
                         body.style.color='white';
                         this.value = 'day';
+                        //이 웹페이지에 있는 모든 a 태그의 폰트 색을 white로 바꿔!
+                        while(i<links.length){
+                            links[i].style.color = 'white';
+                            i = i+1;
+                        }
+                        //document.querySelectorAll('a');
                     }//현재 value가 day면 (바뀌고 나서 다음 상태 변화를 위해 night으로 바꿔주어야함)
                     else{
+                        i = 0;
                         body.style.backgroundColor='white';
                         body.style.color='black';
                         this.value = 'night';
+
+                        while(i<links.length){
+                            links[i].style.color = 'black';
+                            i = i+1;
+                        }
                     }
                 ">
 
