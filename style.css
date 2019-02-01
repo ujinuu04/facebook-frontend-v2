@@ -1,3 +1,7 @@
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
 h1{
     border-bottom: 10px solid rebeccapurple;
     padding: 10px;
